@@ -11,7 +11,7 @@
 <center>
 <input type="text" placeholder="Enter Your Name" id="name">
 <br>
-<input type="button" value="Run" onClick="runs();">
+<input type="button" value="Run" onClick="testing();">
 </center>
 
 <style type="text/css">
@@ -41,8 +41,8 @@ input[type="text"] {
 /*
 By HJCD studios
 */
-function runs() {
-  var nam = name.value;
+function testing() {
+  var nam = document.getElementById("name").value;
   if (nam.length >= 1) {
     var num = Math.floor(Math.random() * 100) + 1;
     alert(nam + " Is " + num + "% Handsome\n" + checks(num));
