@@ -45,12 +45,12 @@ function runs() {
   var nam = name.value;
   if (nam.length >= 1) {
     var num = Math.floor(Math.random() * 100) + 1;
-    alert(nam + " Is " + num + "% Handsome\n" + r(num));
+    alert(nam + " Is " + num + "% Handsome\n" + checks(num));
   } else {
     alert("Name Cannot be blank");
   }
 }
-function r(num) {
+function checks(num) {
   if (num >= 40 && num <= 60) {
     return "I guess your normal";
   }
